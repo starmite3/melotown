@@ -31,14 +31,20 @@
     .container {
                 max-width: 1200px;
                 margin: 0 auto;
-                padding: 0;
+                padding: 1rem 0 0.5rem 0;
     }
     .desc-container {
                 max-width: 1200px;
                 margin: 0 auto;
-                padding: 0 10px 5px 10px;
-                background: #fafaf9;
+                padding: 0 1rem;
+                background: #EAEAEA;
                 box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+        }
+        .sectioncs {
+
+                padding: 1.5rem 1.5rem 1rem 1.5rem;
+
         }
     .txtcenter {
                 width: 100%;
@@ -48,14 +54,14 @@
                 width: 100%;
                 background: #fe8f66;
                 color: #ffffff;
-                padding: 4px 0;
+                padding: 0.36rem 0;
                 font-size: 12px;
                 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     }
     .top-inner {
                 max-width: 1200px;
                 margin: 0 auto;
-                padding: 0 20px;
+                padding: 0 1rem;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -89,17 +95,19 @@
     }
     .header-bar {
                 background: #ffffff;
-                border-bottom: 2px solid #ffccbc;
+                border-bottom: 3px solid #ffccbc;
                 position: sticky;
                 top: 0;
                 z-index: 1000;
+
     }
     .header-inner {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 5px 20px;
+                padding: 1.56rem 1rem;
     }
+
     .logo-container {
                 width: 270px;
                 height: 50px;
@@ -135,8 +143,8 @@
     .main-banner {
                 width: 100%;
                 max-width: 1200px;
-                height: 300px;
-                margin: 1rem auto;
+                height: 17.4rem;
+                margin: 0 auto;
                 overflow: hidden;
                 text-align: center;
                 position: relative;
@@ -147,20 +155,20 @@
                 object-fit: contain;
                 object-position: center;
                 border-radius: 0;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     .feature-wrapper {
                 width: 100%;
                 background-color: #ffffff;
-                box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.1);
-                padding: 0px 0;
-                margin-bottom: 15px;
-    }
+                box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.2);
+                padding: 0 1rem;
+     }
     .features {
+                max-width: 1200px;
                 display: flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
-                margin: 0px auto;
+                margin: 0 auto;
+                padding: 1rem;
     }
     .feature {
                 display: flex;
@@ -169,7 +177,7 @@
                 min-width: 250px;
                 flex: 1;
                 max-width: 320px;
-                padding: 10px;
+                padding: 0px;
     }
     .feature-icon {
                 width: 42px;
@@ -295,14 +303,14 @@
     }
     .main-image {
                 width: 100%;
-                height: 300px;
+                height: 26.5em;
                 background: #fff;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 border-radius: 10px;
                 overflow: hidden;
-                margin: 1rem auto 0.5rem auto;
+                margin: 0 auto 0.5rem auto;
                 box-shadow: 0 4px 12px rgba(0,0,0,0.1);
                 position: relative;
     }
@@ -315,6 +323,7 @@
                 top: 0; left: 0;
                 right: 0; bottom: 0;
                 margin: auto;
+                padding: 0.5rem 0;
     }
     #img1:checked ~ .main-image #main1,
     #img2:checked ~ .main-image #main2,
@@ -333,9 +342,11 @@
                 justify-content: left;
                 gap: 10px;
                 flex-wrap: wrap;
+                margin-top: 5px;
     }
     .thumbnails label {
                 cursor: pointer;
+                background: #F5F5F5;
                 border: 2px solid transparent;
                 border-radius: 6px;
                 overflow: hidden;
@@ -402,7 +413,12 @@
         }
         .accordion input:checked ~ .content {
                 max-height: 500px;
-                padding: 10px 20px;
+                padding: 20px 10px;
+        }
+        .accordion p {
+                font-size: 12px;
+                font-weight: bold;
+
         }
 
         .slider-container {
@@ -444,11 +460,14 @@
                 border-left: 3px solid #fe4a22;
                 padding-left: 10px;
                 font-weight: bold;
-                margin-bottom: 5px;
+                margin-top: 12px;
+                margin-bottom: 15px;
         }
         .produect_description {
                 padding-left: 5px;
                 margin: 5px 5px;
+                font-size: 12px;
+                font-weight: bold;
         }
         .product-recommendation {
                 max-width: 1200px;
@@ -483,7 +502,7 @@
                 transform: scale(1.03);
         }
         .recommendation-item p {
-                font-size: 14px;
+                font-size: 12px;
                 color: #0070ba;
                 margin-top: 10px;
         }
@@ -499,6 +518,12 @@
                 }
         }
         @media (max-width: 768px) {
+                .desc-container {
+                        padding: 0;
+                }
+                .header-btn {
+                        padding: 0 0.5rem;
+                }
                 .menu-nav {
                         display: none;
                 }
@@ -506,13 +531,16 @@
                         display: flex;
                         align-items: center;
                         gap: 30px;
-                        padding: 10px 16px;
+                        padding: 0.5rem 0.5rem;
                         background: #fe4a22;
                 }
                 .top-bar,
                 .feature-wrapper,
                 .main-banner {
                         display: none;
+                }
+                .main-image {
+                        height: 18rem;
                 }
                 .top-inner,
                 .footer-main {
@@ -531,8 +559,11 @@
                         width: 180px;
                         height: 40px;
                 }
+                .header-bar {
+                        border-bottom: 0px;
+                }
                 .header-right {
-                        margin-top: 10px;
+                        margin-top: 0px;
                 }
                 .footer-main .logo-container {
                         argin-bottom: 10px;
@@ -541,5 +572,16 @@
                         font-size: 13px;
                         padding: 8px;
                 }
+                .sectioncs {
+                        padding: 0.5rem 0.5rem;
+                }
+                .container {
+                        padding: 0.8rem 0.5rem;
+                }
+                .produect_title {
+                        border-left: 0px;
+                }
+                .accordion input:checked ~ .content {
+                        padding: 0.5rem 0.5rem;
+                }
         }
-
