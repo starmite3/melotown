@@ -279,65 +279,30 @@
                <div class="productimage">
                   <div id="gallery-inner">
                      <section class="gallery">
-                        <div class="gallery__item" data-src="[image1]">
+                        <div class="gallery__item" data-src="{{channel.product_image_1}}">
                            <input type="radio" id="img-1" checked="" name="gallery" class="gallery__selector">
                            <div class="bigimg"><img class="gallery__img" src="{{channel.product_image_1}}" alt=""></div>
                            <label for="img-1" class="gallery__thumb"><img src="{{channel.product_image_1}}" alt=""></label>
                         </div>
-                        <div class="gallery__item" data-src="[image2]">
+                        <div class="gallery__item" data-src="{{channel.product_image_2}}">
                            <input type="radio" id="img-2" name="gallery" class="gallery__selector">
                            <div class="bigimg"><img class="gallery__img" src="{{channel.product_image_2}}" alt=""></div>
                            <label for="img-2" class="gallery__thumb"><img src="{{channel.product_image_2}}" alt=""></label>
                         </div>
-                        <div class="gallery__item" data-src="[image3]">
+                        <div class="gallery__item" data-src="{{channel.product_image_3}}">
                            <input type="radio" id="img-3" name="gallery" class="gallery__selector">
                            <div class="bigimg"><img class="gallery__img" src="{{channel.product_image_3}}" alt=""></div>
                            <label for="img-3" class="gallery__thumb"><img src="{{channel.product_image_3}}" alt=""></label>
                         </div>
-                        <div class="gallery__item" data-src="[image4]">
+                        <div class="gallery__item" data-src="{{channel.product_image_4}}">
                            <input type="radio" id="img-4" name="gallery" class="gallery__selector">
                            <div class="bigimg"><img class="gallery__img" src="{{channel.product_image_4}}" alt=""></div>
                            <label for="img-4" class="gallery__thumb"><img src="{{channel.product_image_4}}" alt=""></label>
                         </div>
-                        <div class="gallery__item" data-src="[image5]">
+                        <div class="gallery__item" data-src="{{channel.product_image_5}}">
                            <input type="radio" id="img-5" name="gallery" class="gallery__selector">
                            <div class="bigimg"><img class="gallery__img" src="{{channel.product_image_5}}" alt=""></div>
                            <label for="img-5" class="gallery__thumb"><img src="{{channel.product_image_5}}" alt=""></label>
-                        </div>
-                        <div class="gallery__item" data-src="[image6]">
-                           <input type="radio" id="img-6" name="gallery" class="gallery__selector">
-                           <div class="bigimg"><img class="gallery__img" src="{{channel.product_image_6}}" alt=""></div>
-                           <label for="img-6" class="gallery__thumb"><img src="{{channel.product_image_6}}" alt=""></label>
-                        </div>
-                        <div class="gallery__item" data-src="[image7]">
-                           <input type="radio" id="img-7" name="gallery" class="gallery__selector">
-                           <div class="bigimg"><img class="gallery__img" src="{{channel.product_image_7}}" alt=""></div>
-                           <label for="img-7" class="gallery__thumb"><img src="{{channel.product_image_7}}" alt=""></label>
-                        </div>
-                        <div class="gallery__item" data-src="[image8]">
-                           <input type="radio" id="img-8" name="gallery" class="gallery__selector">
-                           <div class="bigimg"><img class="gallery__img" src="{{channel.product_image_8}}" alt=""></div>
-                           <label for="img-8" class="gallery__thumb"><img src="{{channel.product_image_8}}" alt=""></label>
-                        </div>
-                        <div class="gallery__item" data-src="[image9]">
-                           <input type="radio" id="img-9" name="gallery" class="gallery__selector">
-                           <div class="bigimg"><img class="gallery__img" src="{{channel.product_image_9}}" alt=""></div>
-                           <label for="img-9" class="gallery__thumb"><img src="{{channel.product_image_9}}" alt=""></label>
-                        </div>
-                        <div class="gallery__item" data-src="[image10]">
-                           <input type="radio" id="img-10" name="gallery" class="gallery__selector">
-                           <div class="bigimg"><img class="gallery__img" src="{{channel.product_image_10}}" alt=""></div>
-                           <label for="img-10" class="gallery__thumb"><img src="{{channel.product_image_10}}" alt=""></label>
-                        </div>
-                        <div class="gallery__item" data-src="[image11]">
-                           <input type="radio" id="img-11" name="gallery" class="gallery__selector">
-                           <div class="bigimg"><img class="gallery__img" src="{{channel.product_image_11}}" alt=""></div>
-                           <label for="img-11" class="gallery__thumb"><img src="{{channel.product_image_11}}" alt=""></label>
-                        </div>
-                        <div class="gallery__item" data-src="[image12]">
-                           <input type="radio" id="img-12" name="gallery" class="gallery__selector">
-                           <div class="bigimg"><img class="gallery__img" src="{{channel.product_image_12}}" alt=""></div>
-                           <label for="img-12" class="gallery__thumb"><img src="{{channel.product_image_12}}" alt=""></label>
                         </div>
                      </section>
                   </div>
@@ -350,6 +315,60 @@
                   {{description}}
                </div>
                
+               
+               <!-- Accordion 펼침메뉴 리트커머스에서 직접 수정해도 됩니다. -->
+               <div class="accordion">
+                  <div class="accordion-item">
+                     <input type="checkbox" id="item1">
+                     <label for="item1">Shipping</label>
+                     <div class="content">
+                  <p>● The expected delivery date is sent to the buyer as soon as possible for their purchase order. Subject to exceptions, most items will be shipped out within two to three business days from our local warehouse.</p>
+                  <br>
+                  <p>● The majority of our products may be sent to any address for free using one of our many delivery options. The additional payment could be based on the package's weight and the location.</p>
+                  <br>
+                  <p>● Our items are stored in various warehouses. Your item will be shipped from the location nearest to your delivery address to ensure timely arrival. In rare cases, the item might be shipped from a different location due to stock levels.</p>
+                  <br>
+                  <p>● Sorry, but we do not currently offer local pickups.</p>
+                  <br>
+                  <p>● When our shipping partner has assigned a tracking number, we will provide it to you. Get in touch with us if your item hasn't arrived after 7 business days, and we'll do our best to help you track it down and make things right.</p>
+                  <br>
+                  <p>● We are always working hard to ensure your package arrives as soon as possible. Please understand that some factors like weather, high postal traffic, and the performance of shipping companies are outside of our control.</p>
+
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <input type="checkbox" id="item2">
+                     <label for="item2">Returns, Damaged items & Missing items / Refund</label>
+                     <div class="content">
+                  <p>● If the item is damaged, defective, we will cover the cost of return postage. You have 7 days from the date of receipt to provide a photo or video demonstrating the situation.</p>
+                  <br>
+                  <p>● It is important to inform us in advance if you have a change of heart about an item or if the buyer wishes to return it for any reason, including price. You will get return instructions with your buyer's delivery confirmation. In such instances, the purchaser must cover the cost of return shipping, and we should retain the original packing.</p>
+                  <br>
+                  <p>● There is a 30-day return policy from the date of purchase. You can return any item as long as it is unused and in the original packaging.</p>
+                  <br>
+                  <p>● We don't accept the packages if buyer return the package without mutual consent. We won't solve such case and buyer should responsible for the consequences. We reserve the right to refuse any returns for objective reasons.</p>
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <input type="checkbox" id="item3">
+                     <label for="item3">Custom & Duties</label>
+                     <div class="content">
+                  <p>● The price of certain internationally shipped items does not include import duties, taxes, or other fees associated with international orders. These costs are the responsibility of the buyer.</p>
+                  <br>
+                  <p>● Please check with your country's customs office to determine import costs prior to bidding or buying.</p>  
+
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <input type="checkbox" id="item4">
+                     <label for="item4">Canceled Orders / Refused Shipments</label>
+                     <div class="content">
+                  <p>● If the product has already been shipped, it can not be changed or canceled. (It is possible to change / cancel before shipment, but please note that shipment is usually within one day)</p>
+                  <br>
+                  <p>● Please let us know right away if you need to cancel your order after you've submitted it. Though we will try our best to prevent the order from going out by canceling it, we cannot promise that this will be feasible.</p>
+                     </div>
+                  </div>
+               </div>
                
            
                <!-- Recommendation List -->
@@ -426,3 +445,4 @@
 </body>
 
 </html>
+
